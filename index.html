@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Vinh Lam Portfolio</title>
+	<meta charset="utf-8">
+	<meta name="author" content="Vinh Lam">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="contact_form.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<nav height="100">
+		<ul>
+			<li><a href="#about"><strong>About</strong></a></li>
+			<li><a href="#skills"><strong>Skills</strong></a></li>
+			<li><a href="#experience"><strong>Experience</strong></a></li>
+			<li><a href="#contact"><strong>Contact</strong></a></li>
+		</ul>
+	</nav>
+	<div id="my_name">
+		<img src="img/VinhLamHeadshot.jpeg" width="250" height="300" alt="headshot" class="circular-img"/>
+		<h1 id="vl">Vinh Lam</h1>	
+	</div>
+	<div id="about">
+		<h2>Personal Bio</h2>
+		<p>
+		Welcome! My name is Vinh Lam, and I am a full-time student studying University of California, Irvine. I am currently studying Informatics and specializing in Information Technology and Organization. My primary focus for my studies is software development, and I am particularly interested in back-end development. It is one of the many fields that I am fascinated by, and one that pushes me to develop new and innovative ways to use software to solve problems. Some of my favorite pass time activities include solving problems on LeetCode, tutoring others in programming, and occasionally attempting to best my personal record in TypeRacer. 
+		</p>
+		<div id="edu">
+		<h3>Education</h3>
+		<p>University of California, Irvine</p>
+		<p>Informatics, B.S.</p>
+		<h4 id="course-work">Relevant Coursework:</h4>
+		<ul>
+			<li>Python Programming</li>
+			<li>Programming in Java</li>
+			<li>Programming in C/C++</li>
+			<li>Software Testing and Quality Assurance</li>
+			<li>Information Retrieval</li>
+			<li>Information Visualization</li>
+			<li>Requirement Analysis and Engineering</li>
+			<li>Software Design</li>
+			<li>Human Computer Interaction</li>
+			<li>User Interaction Software</li>
+			<li>Information Management</li>
+			<li>Project Management</li>
+		</ul>
+		</div>
+		<h3 id="skills">Technical skills:</h3>
+		<ul>
+			<li>Python</li>
+			<li>Java</li>
+			<li>C++</li>
+			<li>Go</li>
+			<li>HTML</li>
+			<li>CSS</li>
+			<li>JavaScript</li>
+			<li>PostgreSQL</li>
+			<li>MySQL</li>
+			<li>Docker</li>
+		</ul>
+	</div>
+	<div id="experience">
+		<h2>Work Experience</h2>
+		<h3>Syapse, Inc. - Software Engineer Intern</h3>
+		
+		<p>
+		During the summer of 2017, I was a Software Engineer Intern at Syapse working in the back-end/server team. The company provides a precision medicine platform that allows health-care providers to use molecular profiling to diagnose and treat cancer patients. My primary tasks at Syapse include refactoring Syapse's ontology functionalities to utilize PostgreSQL data-store to enhance horizontal scalability, and developing a load testing framework to run simulated user loads against the system's API endpoints. At the end of the internship, I provided live software demos to my engineering team, as well as to a company-wide audience. Although the duration of this experience was only three months long, I was exposed to and picked up many new computer science concepts and coding practices used in the industry.
+		</p>
+	</div>
+	<div id="contact">
+      		<h2>Contact Me!</h2>
+		<form id="email-form" onsubmit="submitForm()">
+			<label>Name: </label>
+			<br/>
+			<input type="text" id="name" placeholder="(Required)" required/>
+			<br/>
+			<label>Subject: </label>
+			<br/>
+			<input type="text" id="subject" placeholder="(Required)" required/>
+			<br/>
+			<label>Message: </label>
+			<br/>
+			<textarea type="text" id="msg" placeholder="Type your message here" rows="20" required></textarea>
+			<br/>
+			<input type="submit" id="subbutton" value="Send">
+		</form>
+      	</div>
+	<footer>
+		<!-- image sources:
+	  		Github logo: https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png
+			LinkedIn logo:https://www.drupal.org/files/project-images/linkedin_circle_logo.png
+			Facebook logo: https://www.seeklogo.net/wp-content/uploads/2016/09/facebook-icon-preview-1-400x400.png
+		--> 
+		<ul>
+			<li><a href="https://www.linkedin.com/in/vinh-lam-51518a149/"><img src="img/linkedinlogo.png" height="50" width="50" /></a></li>
+			<li><a href="https://github.com/vlam321"><img src="img/githublogo.png" height="50" width="50" /></a></li>
+			<li><a href="https://www.facebook.com/vinh.lam.3914"><img src="img/fblogo.png" height="50" width="50" /></a></li>
+		</ul>
+	</footer>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+/* main style sheet */
+
+@media screen and (max-width: 2000px) {
+
+	/* For desktop/laptop */
+	
+	body {
+		margin: 0;
+		padding: 0;
+		font-family: "Courier";
+		background-color: #e5ddc3;
+	}
+
+	nav {
+		background-color: #1e5d6f;
+		padding: 20px, 0, 20px, 0;
+		list-style: none;
+		text-align: center;
+	}
+
+	nav li { display: inline-block;	 padding-right: 50px }
+
+	nav li a { color: black; text-decoration: none; line-height: 50px; }
+
+	nav li a:hover { color: white; }
+
+	.circular-img {
+		border-collapse: collapse;
+		padding: 0;
+		margin: 0;
+		max-width: 95%;
+		border: 5px solid black; 
+		border-radius: 50%;
+	}
+
+	#my_name {
+		margin: 0;
+		padding: 0;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		font-family: Courier New;
+		font-size: 2em;
+	}
+
+	#vl { margin: 0; }
+
+	#about {
+		position: relative;
+		left: 25%;
+		margin-right: 25%;
+		max-width: 800px;
+	}
+
+	#edu { position: relative; left: 3%; margin-right: 3%; }
+
+	#edu p { margin:0; }
+
+	#skills { position: relative; left: 3%;	margin-right: 3%;}
+
+	#about ul { position: relative; left: 3%; margin-right: 3%;}
+
+	#experience { 
+		position: relative; 
+		left: 25%;
+		margin-right: 25%;
+		max-width: 800px;
+	}
+
+	#experience h3, #experience p { position: relative; left: 3%; margin-right: 3%;}
+
+	#contact { position: relative; left: 25%; margin-right: 25%; }
+
+	#contact form p { margin: 0px 0px 0px 0px; }
+	
+	#contact textarea { width: 400px; }
+
+	footer { text-align: center; }
+
+	footer li { display: inline-block; padding-right: 10px; }
+	
+}
+
+@media screen and (max-width: 1025px) {
+	/* For tablet devices -- tested with
+	 * iPad Air 2 interface */
+	
+	#about {
+		position: relative;
+		left: 30%;
+		margin-right: 30%;
+		max-width: 400px;
+
+	}
+
+	#about h2 { text-align: center; }
+	
+	#experience {
+		position: relative; 
+		left: 30%;
+		margin-right: 30%;
+		max-width: 400px;
+
+	}
+
+	#experience h2 { text-align: center; }
+
+	#contact { position: relative; left: 30%; margin-right: 30%; }
+
+}
+
+@media screen and (max-width: 479px) {
+	/* For mobile/phone devices -- tested with
+	 * iPhone 5 interface */
+	
+	nav li { display: block; padding: 1; }
+
+	#my_name {
+		margin: 0;
+		padding: 0;
+		left: 0;
+		width: 100%;
+		text-align: center;
+		font-family: Courier New;
+		font-size: 1.5em;
+	}
+
+	#about {
+		position: relative;
+		left: 2%;
+		margin-right: 2%;
+		max-width: 400px;
+
+	}
+
+	#about h2, #about h3, #about p { text-align: center; }
+	
+	#experience {
+		position: relative; 
+		left: 2%;
+		margin-right: 2%;
+		max-width: 400px;
+
+	}
+
+	#experience h2,  #experience h3 {
+		text-align: center;
+	}
+
+	#contact {
+		position: relative;
+		left: 2%;
+		margin-right: 2%;
+		max-width: 400px;
+		text-align: center;
+	}
+
+	#contact textarea { width: 250px; }
+
+	footer li { 
+		display: inline-block;
+		position: relative;
+		right: 6%;
+		left-margin: 6%;	
+	}
+
+}
+
