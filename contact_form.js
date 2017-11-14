@@ -2,7 +2,6 @@ function valOf(id) {return document.getElementById(id);}
 
 function submitForm() {
 	valOf("subbutton").disable = true;
-	valOf("status").innerHTML = "Processing Form";
 	var name = valOf("name").value;
 	var subject = valOf("subject").value;
 	var msg = valOf("msg").value;
