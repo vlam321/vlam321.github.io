@@ -78,7 +78,18 @@
 	footer { text-align: center; }
 
 	footer li { display: inline-block; padding-right: 10px; }
+
+	#user-research, #user-testing, #findings, #changes {
+		position: relative;
+		left: 25%;
+		margin-right: 25%;
+		max-width: 800px;
+	}
 	
+	#user-research h3, #user-research p { position: relative; left: 3%; margin-right: 3%;}
+	#user-testing h3, #user-testing p { position: relative; left: 3%; margin-right: 3%;}
+	#findings h3, #findings p { position: relative; left: 3%; margin-right: 3%;}
+	#changes h3, #changes p { position: relative; left: 3%; margin-right: 3%;}
 }
 
 @media screen and (max-width: 1025px) {
