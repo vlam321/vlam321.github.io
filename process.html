@@ -2,83 +2,146 @@
 
 <html lang="en">
 <head>
-	<title>Design and Edit process</title>
+	<title>Design and Edit Process</title>
 	<meta charset="utf-8">
 	<meta name="author" content="Vinh Lam">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<script src="contact_form.js"></script>
 	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" type="text/css" href="jquery.fullPage.css" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script type="text/javascript" src="jquery.fullPage.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#d2e5af', '#ccddff', '#1bbc9b', '#4BBFC3', '#7BAABE', '#d2e5af', '#ccddff', '#ccddff', '#1bbc9b'],
+				anchors: ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine', 'ten', 'eleven', 'twelve'],
+				menu: '#menu',
+				scrollingSpeed: 1000,
+				navigation: true
+			});
+		});
+	</script>
+
 </head>
 <body>
-	<nav height="100">
-			<ul>
-			<li><a href="#user-research"><strong>User Research</strong></a></li>
-			<li><a href="#user-testing"><strong>User Testing</strong></a></li>
-			<li><a href="#findings"><strong>Findings</strong></a></li>
-			<li><a href="#changes"><strong>Changes</strong></a></li>
-		</ul>
-	</nav>
-	<div id="user-research">
-		<h2>User Research</h2>
-		<h3>User Interviews</h3>
-		<p>My user interview process mainly involves asking questions to solicit content and feature criteria for creating a good portfolio. This involves finding interviewees who are either working and familiar with recruitment process, or individuals who are studying in similar fields to mine and have some rough ideas of what recruiters are looking for. My interviews started with asking these individuals "goals", "success", and "process" type questions. Particularly, how they might showcase their profession milestones as if they were the ones trying to attract recruiters/hiring managers with their portfolio or resume. This gave me some insights of the types of content that should be displayed on my own portfolio, and the rationale behind why I might want to display them rather than some other irrelevant information.
-		</br></br>The second half of the interviews were questions to find out more about the features and problems that would produce pleasant and unpleasant user experience when viewing my site. This includes the interviewees' preview experience various sites to point things that they liked and disliked. This process helped consolidate some of the must-have features I had in mind, as well as forming some new ideas of contents and features to put on my portfolio and things that I should avoid. 
-		<p>
-		<a href="https://docs.google.com/a/uci.edu/spreadsheets/d/1qGoS9fH2ioKQPw9XnQl5Qw9y2XfTy7BtKXIj33Nc_tc/edit?usp=sharing">View the user interview</a>
-		</p>
-		<h3>Competitor Analysis</h3>
-		<p>Competitor analysis is the process of researching portfolios or sites of individuals and companies who I would consider as my competitors, and finding the strengths and weaknesses of these sites. This part of the research was particularly useful due to how it forced me to be exposed to many incredible design ideas (strengths), including content layouts, color palettes, and navigation features that I would want to have on my portfolio. My competitor analysis consists of sites from three direct competitors who are either back-end or front-end developers, as well as two indirect competitors (UpWork and Toptal). I reviewed these direct competitors to find out the different contents that should be on a professional portfolio of developers, especially as a back-end developers, which is the type of work I want to do. I also wanted to find out the level of design detail that goes into these different types of work. Not surprisingly, those who were more of front-end developers put into a lot more details on design, while the back-end developers focus more on listing out their projects and achievement. As for my indirect competitors, I was hoping to find more about the contents that these companies think are essential for displaying to recruiters and employers, and spot things that I thinks that would be nice to have but missing from these sites. I wanted my site to be able to distinguish itself from the others, and viewing these various sites had provided me with a lot of inputs on how to start doing that.
-		</p>
-		<p>
-		<a href="https://docs.google.com/a/uci.edu/spreadsheets/d/1cKJdwv4slIlz5sXGl-s4npAYc_CnBrk7hycqAWdLC5Y/edit?usp=sharing">View the competitor analysis</a>
-		</p>
-		<h3>Feature Value Matrix</h3>
-		<p>The technique I use for organizing my works for this portfolio is by using the feature value matrix. This matrix allows me to organize my contents and features-to-be based on priorities such as user value, business value, and development effort. The features that are listed in my feature value matrix are based on course requirements, feedback from my user interview and competitor analysis, and things that I thought it would be nice to have. Once these features were listed out in no particular order, I use rated them based on the different values that the features provide and use the sums of these feature scores for each individual feature as metrics to determine what must and should be on my portfolio, as well as what would be nice to have but not necessary. These metrics also provided me with a mean of scheduling which of these features should be implemented first, and which can be implemented in the later phase of development.
-		</p>
-		<p>
-		<a href="https://docs.google.com/a/uci.edu/spreadsheets/d/1sKdI3Kz5_Vg4YabxAGtmOa3OLbfrLIBRW916CjHruas/edit?usp=sharing">View the feature matrix analysis</a>
-		</p>
-		<h3>Feature Prioritization</h3>
-		<p>Once my feature value matrix was completed, and I had the metrics I needed to organize my thoughts, I further organize them by visualizing them in a feature prioritization chart and graphing them out using the Kano model. The chart contains my features listed out perpendicular to a axis of low to high priority. I spread the features/tasks into 4 columns with features that scored from 3-4 (highest), 5-6, 7-8, and 9-10 (lowest). This is pretty useful to me as it provides a visually meaningful checklist of what still need to be done. The features were also plotted out in a graph using the Kano model, which are divided in 4 quadrants based on the business/user values (y-axis) and development effort (x-axis). This model helped me form some ideas of what features should be considered basic (low effort tasks), performance (high in business/user value and low in effort), and delightful (high in business/user values but also high in development effort). This gave me more visual insights on what tasks are import, why they are import, and why I should prioritize some features over others.
-		</p>
-		<p>
-		<a href="https://docs.google.com/a/uci.edu/presentation/d/14n6oM3kwmTcYMR5_KOF9FdC1z5tIPo3cYOwQi9Wbkx0/edit?usp=sharing">View the feature prioritization</a>
-		</p>
+	<ul id="menu">
+			<li data-menuanchor="one"><a href="index.html">Home</a></li>
+			<li data-menuanchor="third"><a href="#five">User Testing</a></li>
+			<li data-menuanchor="fourth"><a href="#eight">Findings</a></li>
+			<li data-menuanchor="fifth"><a href="#ten">Changes</a></li>
+	</ul>
+	<div id="fullpage">	
+		<div class="section" id="user_interview">
+			<div id=user_int>
+			<h2>User Research</h2>
+			<h3>User Interviews</h3>
+			<p>My user interview process mainly involves asking questions to solicit content and feature criteria for creating a good portfolio. This involves finding interviewees who are either working and familiar with recruitment process, or individuals who are studying in similar fields to mine and have some rough ideas of what recruiters are looking for. My interviews started with asking these individuals "goals", "success", and "process" type questions. Particularly, how they might showcase their profession milestones as if they were the ones trying to attract recruiters/hiring managers with their portfolio or resume. This gave me some insights of the types of content that should be displayed on my own portfolio, and the rationale behind why I might want to display them rather than some other irrelevant information.
+			</br></br>The second half of the interviews were questions to find out more about the features and problems that would produce pleasant and unpleasant user experience when viewing my site. This includes the interviewees' preview experience various sites to point things that they liked and disliked. This process helped consolidate some of the must-have features I had in mind, as well as forming some new ideas of contents and features to put on my portfolio and things that I should avoid. 
+			<p>
+			<a href="https://docs.google.com/a/uci.edu/spreadsheets/d/1qGoS9fH2ioKQPw9XnQl5Qw9y2XfTy7BtKXIj33Nc_tc/edit?usp=sharing">View the user interview</a>
+			</p>
+			</div>
+		</div>
+		<div class="section" id="competitor_analysis">
+			<div id="com_a">
+			<h3>Competitor Analysis</h3>
+			<p>Competitor analysis is the process of researching portfolios or sites of individuals and companies who I would consider as my competitors, and finding the strengths and weaknesses of these sites. This part of the research was particularly useful due to how it forced me to be exposed to many incredible design ideas (strengths), including content layouts, color palettes, and navigation features that I would want to have on my portfolio. My competitor analysis consists of sites from three direct competitors who are either back-end or front-end developers, as well as two indirect competitors (UpWork and Toptal). I reviewed these direct competitors to find out the different contents that should be on a professional portfolio of developers, especially as a back-end developers, which is the type of work I want to do. I also wanted to find out the level of design detail that goes into these different types of work. Not surprisingly, those who were more of front-end developers put into a lot more details on design, while the back-end developers focus more on listing out their projects and achievement. As for my indirect competitors, I was hoping to find more about the contents that these companies think are essential for displaying to recruiters and employers, and spot things that I thinks that would be nice to have but missing from these sites. I wanted my site to be able to distinguish itself from the others, and viewing these various sites had provided me with a lot of inputs on how to start doing that.
+			</p>
+			<p>
+			<a href="https://docs.google.com/a/uci.edu/spreadsheets/d/1cKJdwv4slIlz5sXGl-s4npAYc_CnBrk7hycqAWdLC5Y/edit?usp=sharing">View the competitor analysis</a>
+			</p>
+			</div>
+		</div>
+		<div class="section" id="feature_value_matrix">
+			<div id="feat_val">
+			<h3>Feature Value Matrix</h3>
+			<p>The technique I use for organizing my works for this portfolio is by using the feature value matrix. This matrix allows me to organize my contents and features-to-be based on priorities such as user value, business value, and development effort. The features that are listed in my feature value matrix are based on course requirements, feedback from my user interview and competitor analysis, and things that I thought it would be nice to have. Once these features were listed out in no particular order, I use rated them based on the different values that the features provide and use the sums of these feature scores for each individual feature as metrics to determine what must and should be on my portfolio, as well as what would be nice to have but not necessary. These metrics also provided me with a mean of scheduling which of these features should be implemented first, and which can be implemented in the later phase of development.
+			</p>
+			<p>
+			<a href="https://docs.google.com/a/uci.edu/spreadsheets/d/1sKdI3Kz5_Vg4YabxAGtmOa3OLbfrLIBRW916CjHruas/edit?usp=sharing">View the feature matrix analysis</a>
+			</p>
+			</div>
+		</div>	
+		<div class="section" id="feature_prior">
+			<div id="feat_p">
+			<h3>Feature Prioritization</h3>
+			<p>Once my feature value matrix was completed, and I had the metrics I needed to organize my thoughts, I further organize them by visualizing them in a feature prioritization chart and graphing them out using the Kano model. The chart contains my features listed out perpendicular to a axis of low to high priority. I spread the features/tasks into 4 columns with features that scored from 3-4 (highest), 5-6, 7-8, and 9-10 (lowest). This is pretty useful to me as it provides a visually meaningful checklist of what still need to be done. The features were also plotted out in a graph using the Kano model, which are divided in 4 quadrants based on the business/user values (y-axis) and development effort (x-axis). This model helped me form some ideas of what features should be considered basic (low effort tasks), performance (high in business/user value and low in effort), and delightful (high in business/user values but also high in development effort). This gave me more visual insights on what tasks are import, why they are import, and why I should prioritize some features over others.
+			</p>
+			<p>
+			<a href="https://docs.google.com/a/uci.edu/presentation/d/14n6oM3kwmTcYMR5_KOF9FdC1z5tIPo3cYOwQi9Wbkx0/edit?usp=sharing">View the feature prioritization</a>
+			</p>
+			</div>
+		</div>
+		<div class="section" id="user_stories">
+			<div id="user_s">
+			<h2>User Testing</h2>
+			<h3>User Stories</h3>
+			<p>Using user stories allows me to put myself in the perspective of the users, or those who would view my portfolio. This is crucial in re-examining my features in a non-developer point of view, and forced me to think about the motivation behind viewing specific contents or using some of the features in my site. To come up with these stories, I first had to think about the types of user/viewer that my portfolio are intended for, which are mostly consisted of recruiters and hiring managers. Then, I thought about why they're viewing my portfolio (or portfolios in general). This gave me ideas of what my user would want from my site. Afterward, I construct the success criteria of the stories, which are the actions that the users would take to achieve their goals. This allows me to reflect on my current site, and ask myself whether or not my current contents and features/functionalities are able to help the user achieve their goals for viewing my site.
+			</p>
+			<p>
+			<a href="https://docs.google.com/a/uci.edu/spreadsheets/d/16u9wMtD4-i2jZ-LhaKKhGQRifaY4WCs-EL3xi37LxKg/edit?usp=sharing">View the user stories</a>
+			</p>
+			</div>
+		</div>
+		<div class="section" id="cog_walkthrough">
+			<div id="cog_walk">
+			<h3>Cognitive Walkthrough</h3>
+			<p>Cognitive walkthrough is a usability evaluation method that allows me to observe and gain feedback from actual users viewing the contents and design on my portfolio and using the features that are there. Base on some of the motivations in my user stories, I constructed a series of tasks that I had the user perform (or attempt to perform) as I observe and listen to how they think out loud. I also asked them a series of questions to collect feedback on improvements that I can make on the current state of my site. Some of the challenges that I face during this process is coming up with good tasks and questions that would allow for revealing the flaws in my portfolio. At first, I thought about coming up with difficult tasks that my user might find difficult to perform to think of ways to improve the process of navigating around the site. After some thinking, I switch my approach to construct tasks and questions that are goal oriented, which led me to using motivations from my user stories to form tasks. Anther challenge I faced was reflecting on the walkthroughs and thinking about why the users were having difficulties on some of the tasks. Due to how some of my users weren't very verbal, I had to ask related questions to help them reflect on their tasks, and why they might be struggling some aspects of them. The feedback I received were very constructive, and provided me with a lot of ideas for how to improve my site.
+			</p>
+			<p>
+			<a href="https://docs.google.com/a/uci.edu/spreadsheets/d/1pxPVgbqecVW3iM1ky-rEt4OQKBWlC77LcFiaa385asU/edit?usp=sharing">View the cognitive walkthrough</a>
+			</p>
+			</div>
+		</div>
+		<div class="section" id="user_test">
+			<div id="user_t">
+			<h3>User Test</h3>
+			<p>For the user test portion, the two types of test I used were click test and question test. For the click test, I want to determine whether my users can easily navigate to my past job experience, since my main target users are recruiters and hiring managers. Surprisingly, a significant portion of the user clicked "About" to navigate to the my job experience, even through "Experience" was one of the words in the navigation bar. This is because these users had either come across many other different online portfolios or made online portfolios of their own, and had conception that it is common to have job experience in the about page or section. As for the question test, I wanted to know about some of my design decision, asked questions regarding their expectation of the site content, whether or not they like the current appeal (content layout, color-choice, font choice) of the site. Significant of the people answered that they do not like the current appeal, which is excellent feedback for how I can make improvement.
+			</p>
+			<p>
+			<a href="https://usabilityhub.com/tests/78cc902a013d/results/8b96387a92ca">View the click test results</a>
+			</p>
+			<p>
+			<a href="https://usabilityhub.com/tests/d4006599f999/results/9d9f1fc24c54">View the the question test results</a>
+			</p>
+			</div>
+		</div>
+		<div class="section" id="findings1">
+			<div id="find_1">
+			<h2>Summary of Findings</h2>
+			<h3>(part 1)</h3>
+			<p>The finding of user testings, based the three portions of this phase I listed above, shows that my portfolio contain sufficient contents that would attract recruiters and hiring manager. The main problems of the site are mainly related to my design decisions. While it was challenging to generate insights and ways to improve my site due to how my users weren't as verbal, I did ended up getting a lot of good feedback by probing and further examining the responses by asking further questions. I noted that there are a lot of improvements that I can make with in terms of the color choice and text font that I use on the site. On top of which, they layout and placement of my job experience conflicts with some of the mental models that some users had in mind in terms of where it should be. This especially important because if actual recruiters have the same model of what the portfolio should look like, they would have trouble with navigating around my site. In terms of the general layout of the site, one user stated that clicking on specific words in the navigation bar should only lead him to those specific content, and not to the portion of webpage with multiple other sections in it. I completely agree with this feedback and think that the layout can use a bit of fixing to avoid confusions.
+			</p>
+			</div>
+		</div>
+		<div class="section" id="findings2">
+			<div id="find_2">
+			<h3>(part 2)</h3>
+			<p>In terms of functionalities, my contact form received a lot of negative feedback due to the how it did not provide enough feedback on whether the users messages are actually sent to me. Most user would rather I have my email displayed on the site so they can email me themselves. Furthermore, I also the functionality of the form also did not do what they have expected. Clicking the send button would open up a third party mailing app rather than to simply notify them that their messages have been sent. Other useful feedback I got involve users answering on my question test that the current colors and font my site are too plain (in a bad way), and that the it is hard to read some of the text on my site. These feedback guided my decision of finding new color scheme and font choice to make the site stand out more. I ended up looking back at some of the sites in my competitor analysis for inspiration, which clearly showed me how color and font choice, can help make the site content pop out and captivate the audience.
+			</p>
+			</div>
+		</div>
+		<div class="section" id="changes1">
+			<div id="chng_1">
+			<h2>Incorporation of Findings</h2>
+			<h3>(part 1)</h3>
+			<p>Based on my findings, these are some of the ways I planned on improving my portfolio. Firstly, I would redesign the site using a different color palette background, and using multiple different colors to divide the different sections on the page. I think that this is a good way to allow users to focus on and keep in track of the section that they indent to view. Also, I would use a different font to make the words stand out more for better readability. This will involve further research on the site that are using similar color choice backgrounds, and the fonts that the designers use to compliment the colors.
+			</p>
+			</div>
+		</div>
+		<div class="section" id="changes2">
+			<div id="chng_2">
+			<h3>(part 2)</h3>
+			<p>Another change that I planned on making is to layout the site differently. This involve concatenating my experiences to my "about" section to avoid any misconception of where they should go to find my past job experience. On top of that, I planned on using jQuery to incorporate better scrolling functionality and to keep each section more divided. This would be a challenge since I have no experience in using jQuery. On top of which, I would have to configure my style (background) settings of all the different sections to let the using know that they've just scrolled to a different section. At first, I thought about just using more white space between each section, but it seems more intuitive that every time a user scrolls or swipe their phone they would be directed to a different section.
+			</p>
+			</div>
+		</div>
+		<div class="section" id="changes3">
+			<div id="chng_3">
+			<h3>(part 3)</h3>
+			<p>Lastly, I would completely remove the contact form and provide my email near my social media and GitHub links. Most of the users either dislike the contact form functionality or don't trust it. I think that it would be better to let them handle the emailing. This way, they would get the trustful feedback they need by using performing process that they are familiar with (i.e. using Gmail or Outlook).
+			</p>
+			</div>
+		</div>
 	</div>
-	<div id="user-testing">
-		<h2>User Testing</h2>
-		<h3>User Stories</h3>
-		<p>Using user stories allows me to put myself in the perspective of the users, or those who would view my portfolio. This is crucial in re-examining my features in a non-developer point of view, and forced me to think about the motivation behind viewing specific contents or using some of the features in my site. To come up with these stories, I first had to think about the types of user/viewer that my portfolio are intended for, which are mostly consisted of recruiters and hiring managers. Then, I thought about why they're viewing my portfolio (or portfolios in general). This gave me ideas of what my user would want from my site. Afterward, I construct the success criteria of the stories, which are the actions that the users would take to achieve their goals. This allows me to reflect on my current site, and ask myself whether or not my current contents and features/functionalities are able to help the user achieve their goals for viewing my site.
-		</p>
-		<p>
-		<a href="https://docs.google.com/a/uci.edu/spreadsheets/d/16u9wMtD4-i2jZ-LhaKKhGQRifaY4WCs-EL3xi37LxKg/edit?usp=sharing">View the user stories</a>
-		</p>
-		<h3>Cognitive Walkthrough</h3>
-		<p>Cognitive walkthrough is a usability evaluation method that allows me to observe and gain feedback from actual users viewing the contents and design on my portfolio and using the features that are there. Base on some of the motivations in my user stories, I constructed a series of tasks that I had the user perform (or attempt to perform) as I observe and listen to how they think out loud. I also asked them a series of questions to collect feedback on improvements that I can make on the current state of my site. Some of the challenges that I face during this process is coming up with good tasks and questions that would allow for revealing the flaws in my portfolio. At first, I thought about coming up with difficult tasks that my user might find difficult to perform to think of ways to improve the process of navigating around the site. After some thinking, I switch my approach to construct tasks and questions that are goal oriented, which led me to using motivations from my user stories to form tasks. Anther challenge I faced was reflecting on the walkthroughs and thinking about why the users were having difficulties on some of the tasks. Due to how some of my users weren't very verbal, I had to ask related questions to help them reflect on their tasks, and why they might be struggling some aspects of them. The feedback I received were very constructive, and provided me with a lot of ideas for how to improve my site.
-		</p>
-		<p>
-		<a href="https://docs.google.com/a/uci.edu/spreadsheets/d/1pxPVgbqecVW3iM1ky-rEt4OQKBWlC77LcFiaa385asU/edit?usp=sharing">View the cognitive walkthrough</a>
-		</p>
-		<h3>User Test</h3>
-		<p>For the user test portion, the two types of test I used were click test and question test. For the click test, I want to determine whether my users can easily navigate to my past job experience, since my main target users are recruiters and hiring managers. Surprisingly, a significant portion of the user clicked "About" to navigate to the my job experience, even through "Experience" was one of the words in the navigation bar. This is because these users had either come across many other different online portfolios or made online portfolios of their own, and had conception that it is common to have job experience in the about page or section. As for the question test, I wanted to know about some of my design decision, asked questions regarding their expectation of the site content, whether or not they like the current appeal (content layout, color-choice, font choice) of the site. Significant of the people answered that they do not like the current appeal, which is excellent feedback for how I can make improvement.
-		</p>
-		<p>
-		<a href="https://usabilityhub.com/tests/78cc902a013d/results/8b96387a92ca">View the click test results</a>
-		</p>
-		<p>
-		<a href="https://usabilityhub.com/tests/d4006599f999/results/9d9f1fc24c54">View the the question test results</a>
-		</p>
-	</div>
-	<div id="findings">
-		<h2>Summary of Findings</h2>
-		<p>The finding of user testings, based the three portions of this phase I listed above, shows that my portfolio contain sufficient contents that would attract recruiters and hiring manager. The main problems of the site are mainly related to my design decisions. While it was challenging to generate insights and ways to improve my site due to how my users weren't as verbal, I did ended up getting a lot of good feedback by probing and further examining the responses by asking further questions. I noted that there are a lot of improvements that I can make with in terms of the color choice and text font that I use on the site. On top of which, they layout and placement of my job experience conflicts with some of the mental models that some users had in mind in terms of where it should be. This especially important because if actual recruiters have the same model of what the portfolio should look like, they would have trouble with navigating around my site. In terms of the general layout of the site, one user stated that clicking on specific words in the navigation bar should only lead him to those specific content, and not to the portion of webpage with multiple other sections in it. I completely agree with this feedback and think that the layout can use a bit of fixing to avoid confusions.</br></br>In terms of functionalities, my contact form received a lot of negative feedback due to the how it did not provide enough feedback on whether the users messages are actually sent to me. Most user would rather I have my email displayed on the site so they can email me themselves. Furthermore, I also the functionality of the form also did not do what they have expected. Clicking the send button would open up a third party mailing app rather than to simply notify them that their messages have been sent. </br></br>Other useful feedback I got involve users answering on my question test that the current colors and font my site are too plain (in a bad way), and that the it is hard to read some of the text on my site. These feedback guided my decision of finding new color scheme and font choice to make the site stand out more. I ended up looking back at some of the sites in my competitor analysis for inspiration, which clearly showed me how color and font choice, can help make the site content pop out and captivate the audience.
-		</p>
-	</div>
-	<div id="changes">
-		<h2>Incorporation of Findings</h2>
-		<p>Based on my findings, these are some of the ways I planned on improving my portfolio. Firstly, I would redesign the site using a different color palette background, and using multiple different colors to divide the different sections on the page. I think that this is a good way to allow users to focus on and keep in track of the section that they indent to view. Also, I would use a different font to make the words stand out more for better readability. This will involve further research on the site that are using similar color choice backgrounds, and the fonts that the designers use to compliment the colors.</br></br>Another change that I planned on making is to layout the site differently. This involve concatenating my experiences to my "about" section to avoid any misconception of where they should go to find my past job experience. On top of that, I planned on using jQuery to incorporate better scrolling functionality and to keep each section more divided. This would be a challenge since I have no experience in using jQuery. On top of which, I would have to configure my style (background) settings of all the different sections to let the using know that they've just scrolled to a different section. At first, I thought about just using more white space between each section, but it seems more intuitive that every time a user scrolls or swipe their phone they would be directed to a different section.</br></br>Lastly, I would completely remove the contact form and provide my email near my social media and GitHub links. Most of the users either dislike the contact form functionality or don't trust it. I think that it would be better to let them handle the emailing. This way, they would get the trustful feedback they need by using performing process that they are familiar with (i.e. using Gmail or Outlook).
-		</p>
-
-	</div>
-
 </body>

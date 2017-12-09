@@ -6,23 +6,24 @@
 	
 	body {
 		margin: 0;
-		padding: 0;
 		font-family: "Courier";
-		background-color: #e5ddc3;
 	}
 
-	nav {
-		background-color: #1e5d6f;
-		padding: 20px, 0, 20px, 0;
+	#menu {
+		background-color: #253949;
+		margin: 0;
+		padding: 0px, 0, 0px, 0;
 		list-style: none;
 		text-align: center;
 	}
 
-	nav li { display: inline-block;	 padding-right: 50px }
+	#menu ul {margin: 0;}
 
-	nav li a { color: black; text-decoration: none; line-height: 50px; }
+	#menu li { display: inline-block; padding-right: 50px }
 
-	nav li a:hover { color: white; }
+	#menu li a { color: white; text-decoration: none; line-height: 50px; font-size: 15px; }
+
+	#menu li a:hover { color: black; }
 
 	.circular-img {
 		border-collapse: collapse;
@@ -38,46 +39,85 @@
 		padding: 0;
 		left: 0;
 		width: 100%;
+		background-color: #91cfec;
 		text-align: center;
 		font-family: Courier New;
-		font-size: 2em;
 	}
 
-	#vl { margin: 0; }
+	#my_name h2, #education h2 {font-size: 25px;}
+	#my_name p, #education p,  #education li { font-size: 15px; }
 
-	#about {
-		position: relative;
-		left: 25%;
-		margin-right: 25%;
-		max-width: 800px;
-	}
-
-	#edu { position: relative; left: 3%; margin-right: 3%; }
-
-	#edu p { margin:0; }
-
-	#skills { position: relative; left: 3%;	margin-right: 3%;}
-
-	#about ul { position: relative; left: 3%; margin-right: 3%;}
-
-	#experience { 
-		position: relative; 
-		left: 25%;
-		margin-right: 25%;
-		max-width: 800px;
-	}
-
-	#experience h3, #experience p { position: relative; left: 3%; margin-right: 3%;}
-
-	#contact { position: relative; left: 25%; margin-right: 25%; }
-
-	#contact form p { margin: 0px 0px 0px 0px; }
+	#vl {margin: 0px 0px 0px 0px; }
 	
-	#contact textarea { width: 400px; }
+	#education {
+		margin: 0;
+		padding: 0;
+		left: 0;
+		width: 100%;
+		font-family: Courier New;
+		background-color:#37c5ee;
+	}
+	
+	#skills {
+		margin: 0;
+		padding: 0;
+		left: 0;
+		width: 100%;
+		font-family: Courier New;
+		background-color:#c3e4f3;
+	}
 
-	footer { text-align: center; }
+	#experience {
+		margin: 0;
+		padding: 0;
+		left: 0;
+		width: 100%;
+		font-family: Courier New;
+		background-color:#91ecdc;
+	}
+	
+	#contact {
+		margin: 0;
+		padding: 0;
+		left: 0;
+		width: 100%;
+		font-family: Courier New;
+		background-color: #d2e5af;
+		text-align: center;
+	}
 
-	footer li { display: inline-block; padding-right: 10px; }
+	#user_interview, #competitor_analysis, #feature_value_matrix, #feature_prior, #user_stories, #cog_walkthrough, #user_test, #findings1, #findings2, #changes1, #changes2, #changes3 {
+		margin: 0;
+		padding: 0;
+		left: 0;
+		width: 100%;
+		font-family: Courier New;
+		text-align: center;
+	}
+
+	#education p { margin:0; }
+
+	#education li {list-style-type: none;}
+
+	#bio { margin: auto; width: 50%; padding: 0; text-align: center; }
+	#edu { margin: auto; width: 50%; padding: 70px; text-align: center; }
+	#skz { margin: auto; width: 50%; padding: 30px; text-align: center; }
+	#exp { margin: auto; width: 50%; padding: 30px; text-align: center; }
+	#con { margin: auto; width: 50%; padding: 30px; text-align: center; }
+	#user_int, #com_a, #feat_val, #feat_p, #user_s, #feat_val, #feat_p, #user_s, #cog_walk, #user_t, #find_1, #find_2, #chng_1, #chng_2, #chng_3  { margin: auto; width: 50%; padding: 30px; text-align: center; }
+	
+	#edu ul {padding: 0}
+	
+	#skill-list1, #skill-list2, #skill-list3, #skill-list4, { padding:0 }
+
+	#skill-list1 li, #skill-list2 li, #skill-list3 li, #skill-list4 li{
+		display: inline-block;
+	}
+
+
+	#con ul {padding: 0}
+	#con h2 {margin: 150px 0px 0px 5px;}
+	#con li { display: inline-block; padding-right: 10px; }
 
 	#user-research, #user-testing, #findings, #changes {
 		position: relative;
@@ -90,6 +130,7 @@
 	#user-testing h3, #user-testing p { position: relative; left: 3%; margin-right: 3%;}
 	#findings h3, #findings p { position: relative; left: 3%; margin-right: 3%;}
 	#changes h3, #changes p { position: relative; left: 3%; margin-right: 3%;}
+	
 }
 
 @media screen and (max-width: 1025px) {
