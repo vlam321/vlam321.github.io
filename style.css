@@ -39,7 +39,6 @@
 		padding: 0;
 		left: 0;
 		width: 100%;
-		background-color: #91cfec;
 		text-align: center;
 		font-family: Courier New;
 	}
@@ -55,7 +54,6 @@
 		left: 0;
 		width: 100%;
 		font-family: Courier New;
-		background-color:#37c5ee;
 	}
 	
 	#skills {
@@ -64,7 +62,6 @@
 		left: 0;
 		width: 100%;
 		font-family: Courier New;
-		background-color:#c3e4f3;
 	}
 
 	#experience {
@@ -73,7 +70,6 @@
 		left: 0;
 		width: 100%;
 		font-family: Courier New;
-		background-color:#91ecdc;
 	}
 	
 	#contact {
@@ -82,7 +78,6 @@
 		left: 0;
 		width: 100%;
 		font-family: Courier New;
-		background-color: #d2e5af;
 		text-align: center;
 	}
 
